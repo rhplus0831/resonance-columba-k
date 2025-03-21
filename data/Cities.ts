@@ -2,7 +2,7 @@ import {
   CITIES as CITIES_IMPORT,
   CITY_ATTACH_LIST,
   CITY_WITH_PRESTIGE as CITY_WITH_PRESTIGE_IMPORT,
-} from "resonance-data-columba/dist/columbabuild";
+} from "resonance-data-columba-k/dist/columbabuild";
 
 export type CityName = (typeof CITIES_IMPORT)[number];
 export const CITIES: CityName[] = CITIES_IMPORT;

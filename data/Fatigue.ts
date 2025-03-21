@@ -1,6 +1,6 @@
 import { Fatigue } from "@/interfaces/fatigue";
 import { PlayerConfigRoles } from "@/interfaces/player-config";
-import { CITY_FATIGUES } from "resonance-data-columba/dist/columbabuild";
+import { CITY_FATIGUES } from "resonance-data-columba-k/dist/columbabuild";
 
 const FATIGUES: Fatigue[] = CITY_FATIGUES;
 

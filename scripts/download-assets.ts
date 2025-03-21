@@ -1,6 +1,6 @@
 import { RsnsUnpacker, getJimpPNG } from "@tsuk1ko/rsns-unpack";
 import { readFile, readdir, writeFile } from "fs/promises";
-import { RESONANCE_SKILLS } from "resonance-data-columba/dist/columbabuild";
+import { RESONANCE_SKILLS } from "resonance-data-columba-k/dist/columbabuild";
 
 const ROLES_HEAD_DIR = "public/roles/head";
 const ROLES_HEAD_IMPORT_FILE = "utils/role-image-utils.ts";

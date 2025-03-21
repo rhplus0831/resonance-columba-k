@@ -2,7 +2,7 @@ import { Product, ProductUnlockConditions } from "@/interfaces/product";
 import {
   GOODS_UNLOCK_CONDITIONS as goodsUnlockConditions,
   PRODUCTS as pdtData,
-} from "resonance-data-columba/dist/columbabuild";
+} from "resonance-data-columba-k/dist/columbabuild";
 
 const pdts: Product[] = Object.values(pdtData) as Product[];
 
