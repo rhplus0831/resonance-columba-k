@@ -27,7 +27,7 @@ jobs:
         run: |
 
           git config user.name "pinisok"
-          git config user.email "pinisok@gmail.com"
+          git config user.email "prain3ps@gmail.com"
       - name: pnpm install
         run: pnpm install
 
