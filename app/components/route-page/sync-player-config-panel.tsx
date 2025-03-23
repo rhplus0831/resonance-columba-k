@@ -128,13 +128,13 @@ export default function SyncPlayerConfigPanel(props: SyncPlayerConfigPanelProps)
         // disabled={playerConfig.nanoid !== undefined}
       />
       <Button className="m-4" disabled={(!!id && idError) || loading} onClick={handleUpload}>
-        上传
+        업로드
       </Button>
       <Button className="m-4" disabled={idError || loading} onClick={handleDownload}>
-        下载
+        다운로드
       </Button>
       <Button className="m-4" disabled={idError || loading} onClick={handleCopy}>
-        复制ID
+        아이디 복사
       </Button>
 
       {loading && <CircularProgress />}
@@ -142,11 +142,11 @@ export default function SyncPlayerConfigPanel(props: SyncPlayerConfigPanelProps)
       <Box className="grow"></Box>
 
       <Button className="m-4" onClick={handleClear} color="error">
-        清空本地配置
+        로컬 설정 초기화
       </Button>
 
       <Typography className="basis-full p-2">
-        第一次上传时将ID留空，直接点击上传按钮，系统会自动生成ID。之后将ID填入到需要同步的设备，点击下载即可。
+       처음 업로드하는 경우 ID를 비워두고 직접 업로드 버튼을 클릭하면 시스템에서 자동으로 ID가 생성됩니다. 그런 다음 동기화가 필요한 장치에 ID를 입력하고 다운로드를 클릭하세요.
       </Typography>
 
       <Snackbar

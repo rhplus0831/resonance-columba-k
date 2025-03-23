@@ -43,8 +43,8 @@ test("mergePlayerConfigs", () => {
   }
 
   // test data merged correctly
-  let merged = mergePlayerConfigs({ roles: { 叶珏: { resonance: 6 } } });
-  expect(merged.roles.叶珏.resonance).toBe(6);
+  let merged = mergePlayerConfigs({ roles: { 예주: { resonance: 6 } } });
+  expect(merged.roles.예주.resonance).toBe(6);
 
   merged = mergePlayerConfigs({ maxLot: 1000 });
   expect(merged.maxLot).toBe(1000);
@@ -67,27 +67,27 @@ const validConfig1 = {
     disabled: false,
   },
   prestige: {
-    修格里城: 13,
-    曼德矿场: 13,
-    澄明数据中心: 11,
-    七号自由港: 14,
-    阿妮塔发射中心: 16,
-    海角城: 6,
-    铁山城: 6,
-    贡露城: 5,
-    岚心城: 4,
+    슈그리스시: 13,
+    "맨더 광산": 13,
+    "청명 데이터 센터": 11,
+    "자유 무역항-7": 14,
+    "아니타 발사 센터": 16,
+    케이프시: 6,
+    포트리스시: 6,
+    그로누시: 5,
+    스톰아이시: 4,
   },
   roles: {
-    叶珏: {
+    예주주: {
       resonance: 5,
     },
-    艾略特: {
+    엘리엇: {
       resonance: 4,
     },
-    甘雅: {
+    간야: {
       resonance: 4,
     },
-    朱利安: {
+    줄리안: {
       resonance: 4,
     },
   },
@@ -112,7 +112,7 @@ const validConfig1 = {
     防弹背心: false,
   },
   events: {
-    红茶战争: {
+    "홍차 전쟁": {
       activated: true,
     },
   },
@@ -201,34 +201,34 @@ const invalidConfigs = [
   },
   {
     prestige: {
-      修格里城: 13,
-      曼德矿场: 13,
-      澄明数据中心: 11,
-      七号自由港: 14,
+      "슈그리스시": 13,
+      "맨더 광산": 13,
+      "청명 데이터 센터": 11,
+      "자유 무역항": 14,
       data: "hello",
     },
   },
   {
     prestige: {
-      修格里城: 21,
+      "슈그리스시": 21,
     },
   },
   {
     prestige: {
-      修格里城: -21,
+      "슈그리스시": -21,
     },
   },
   {
     prestige: {
-      修格里城: 13,
-      曼德矿场: 13,
-      澄明数据中心: 11,
-      七号自由港: "token",
+      "슈그리스시": 13,
+      "맨더 광산": 13,
+      "청명 데이터 센터": 11,
+      "자유 무역항": "token",
     },
   },
   {
     roles: {
-      叶珏: {
+      예주: {
         resonance: 5,
         data: "hello",
       },
@@ -236,33 +236,33 @@ const invalidConfigs = [
   },
   {
     roles: {
-      叶珏: {
+      예주: {
         resonance: 6,
       },
     },
   },
   {
     roles: {
-      叶珏: {
+      예주: {
         resonance: -6,
       },
     },
   },
   {
     roles: {
-      叶珏: {},
+      예주: {},
     },
   },
   {
     roles: {
-      叶珏珏: {
+      예주주: {
         resonance: 5,
       },
     },
   },
   {
     roles: {
-      叶珏: {
+      예주: {
         resonance: "token",
       },
     },
@@ -368,38 +368,38 @@ const invalidConfigs = [
   },
   {
     productUnlockStatus: {
-      琥珀: true,
-      防弹背心心: false,
+      호박: true,
+      방탄조끼끼: false,
     },
   },
   {
     productUnlockStatus: {
-      琥珀: true,
-      防弹背心: "qsdqsd",
+      호박: true,
+      방탄조끼: "qsdqsd",
     },
   },
   {
     productUnlockStatus: {
-      琥珀: 0,
+      호박: 0,
     },
   },
   {
     events: {
-      战战争争: {
+      전전쟁쟁: {
         activated: true,
       },
     },
   },
   {
     events: {
-      红茶战争: {
+      "홍차 전쟁": {
         activated: 1,
       },
     },
   },
   {
     events: {
-      红茶战争: {
+      "홍차 전쟁": {
         hey: "you",
       },
     },

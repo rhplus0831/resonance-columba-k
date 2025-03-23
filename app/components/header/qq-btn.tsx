@@ -51,7 +51,7 @@ export default function QQBtn(props: { wrapperClassName?: string; buttonClassNam
           horizontal: "left",
         }}
       >
-        <Typography sx={{ p: 2 }}>雷索纳斯交流群 474679095</Typography>
+        <Typography sx={{ p: 2 }}>레조넌스交流群 474679095</Typography>
       </Popover>
     </span>
   );

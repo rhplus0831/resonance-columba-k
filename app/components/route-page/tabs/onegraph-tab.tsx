@@ -313,24 +313,24 @@ export default function OnegraphTab(props: OnegraphTabProps) {
         <div className="flex flex-col">
           <Typography className="py-1">
             <Typography component="strong" fontSize={18}>
-              点击
+              테이블
             </Typography>
-            表格中的数值可查看路线详情。
+            에서 값을 클릭하면 경로 세부 정보를 볼 수 있습니다.
           </Typography>
           <Typography className="py-1">
-            强烈建议先前往个性化设置页面，填写货舱大小以及声望等级，以获得更准确的结果。
+          더 정확한 결과를 얻으려면 먼저 개인 설정 페이지로 가서 화물칸 크기와 평판 수준을 입력하는 것이 좋습니다.
           </Typography>
           <Typography className="py-1">
-            来回选项开启时，算法会以最优解自动分配进货书，显示的线路是利润最大的进货书分配方法。
+          왕복 옵션을 켜면 알고리즘은 자동으로 최적의 솔루션으로 루트를 할당하며, 표시된 경로는 가장 높은 수익을 낼 수 있는 루트입니다.
           </Typography>
           <Typography className="py-1">
-            总进货次数最大{MAX_ONEGRAPH_MAX_RESTOCK}，超过{MAX_ONEGRAPH_MAX_RESTOCK_SLIDER}时请通过输入框手动输入。
+          최대 구매 총 개수 {MAX_ONEGRAPH_MAX_RESTOCK}, 초과 {MAX_ONEGRAPH_MAX_RESTOCK_SLIDER} 입력란을 통해 직접 입력해 주세요.
           </Typography>
         </div>
       </div>
       <Box>
         <Box alignItems="center" className="mb-2 flex justify-center flex-wrap">
-          <Typography sx={{ textWrap: "nowrap" }}>总进货次数</Typography>
+          <Typography sx={{ textWrap: "nowrap" }}>총 구매 수</Typography>
           <Box className="flex justify-center">
             <IconButton
               onClick={() => {
@@ -344,7 +344,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
             </IconButton>
             <Slider
               className="w-32 sm:w-60"
-              aria-label="总进货次数"
+              aria-label="총 구매 수"
               value={onegraphMaxRestock}
               onChange={(_e, newVal) => setMaxRestock(newVal as number)}
               min={0}
@@ -388,7 +388,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 }}
               />
             }
-            label={<Typography>来回</Typography>}
+            label={<Typography>왕복</Typography>}
           />
 
           <FormControlLabel
@@ -401,7 +401,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 }}
               />
             }
-            label={<Typography>显示单位疲劳利润</Typography>}
+            label={<Typography>단위 피로도 이익 표시</Typography>}
           />
 
           <FormControlLabel
@@ -414,7 +414,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 }}
               />
             }
-            label={<Typography>显示综合参考利润</Typography>}
+            label={<Typography>종합 기준 이익 표시</Typography>}
           />
 
           <FormControlLabel
@@ -427,12 +427,12 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 }}
               />
             }
-            label={<Typography>启用多配置</Typography>}
+            label={<Typography>여러 설정 사용</Typography>}
           />
         </Box>
 
         <Box alignItems="center" className="mb-2 flex justify-center flex-wrap">
-          <Typography className="m-4 grow basis-1/2 sm:grow-0 sm:basis-auto -order-2">去程</Typography>
+          <Typography className="m-4 grow basis-1/2 sm:grow-0 sm:basis-auto -order-2">출발</Typography>
           <BargainInputs
             barginConfig={playerConfig.bargain}
             onBargainChange={onGoBargainChange}
@@ -448,12 +448,12 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 }}
               />
             }
-            label={<Typography>不议价</Typography>}
+            label={<Typography>협상 비활성화</Typography>}
           />
         </Box>
 
         <Box alignItems="center" className="mb-2 flex justify-center flex-wrap">
-          <Typography className="m-4 grow basis-1/2 sm:grow-0 sm:basis-auto -order-2">回程</Typography>
+          <Typography className="m-4 grow basis-1/2 sm:grow-0 sm:basis-auto -order-2">도착</Typography>
           <BargainInputs
             barginConfig={playerConfig.returnBargain}
             onBargainChange={onReturnBargainChange}
@@ -469,14 +469,14 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 }}
               />
             }
-            label={<Typography>不议价</Typography>}
+            label={<Typography>협상 비활성화</Typography>}
           />
         </Box>
       </Box>
 
       {onegraphEnableMultiConfig ? (
         <Box alignItems="center" className="mb-2 flex justify-center flex-wrap">
-          <Typography className="m-4 grow sm:grow-0 -order-2 whitespace-nowrap">配置</Typography>
+          <Typography className="m-4 grow sm:grow-0 -order-2 whitespace-nowrap">설정</Typography>
           <OnegraphMultiConfigSelect playerConfig={playerConfig} onPlayerConfigChange={onPlayerConfigChange} />
         </Box>
       ) : null}
@@ -496,11 +496,11 @@ export default function OnegraphTab(props: OnegraphTabProps) {
           >
             <ToggleButton value="table" aria-label="table">
               <TableViewIcon />
-              表格
+              테이블
             </ToggleButton>
             <ToggleButton value="list" aria-label="list">
               <ViewListIcon />
-              排序
+              목록
             </ToggleButton>
           </ToggleButtonGroup>
           <IconButton onClick={onOnegraphCellColorDisabledButtonClick} className="p-3">
@@ -567,12 +567,12 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 <TableRow>
                   <TableCell colSpan={2} rowSpan={2}></TableCell>
                   <TableCell align="center" colSpan={CITIES.length}>
-                    终点
+                    도착
                   </TableCell>
                 </TableRow>
                 {/** header 2 - city cells */}
                 <TableRow>
-                  {CITIES.map((city) => (
+                  {CITIES.map((city, index) => (
                     <TableCell key={`onegraph-${city}`} align="center">
                       {city}
                     </TableCell>
@@ -585,7 +585,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                     {/** spaning 起点 cell */}
                     {index === 0 && (
                       <TableCell className="onegraph-cell-fromcity-source text-center" rowSpan={CITIES.length}>
-                        起点
+                        출발
                       </TableCell>
                     )}
 
@@ -640,8 +640,8 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                         textClass = "";
                       }
 
-                      // use 万 as unit, keep 0 decimal
-                      const displayProfit = profit > 10000 ? (profit / 10000).toFixed(0) + "万" : profit;
+                      // use 만 as unit, keep 0 decimal
+                      const displayProfit = profit > 10000 ? (profit / 10000).toFixed(0) + "만" : profit;
 
                       return (
                         <TableCell
@@ -756,7 +756,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                 const { fromCity, toCity, reco } = item;
                 const stats = onegraphGoAndReturn ? reco.goAndReturnTotal : reco.simpleGo;
                 const { profit, profitPerFatigue, generalProfitIndex } = stats;
-                const displayProfit = profit > 10000 ? (profit / 10000).toFixed(0) + "万" : profit;
+                const displayProfit = profit > 10000 ? (profit / 10000).toFixed(0) + "만" : profit;
                 return (
                   <ListItem key={`topprofit-${index}`} className="sm:flex-nowrap flex-wrap justify-center py-3">
                     <ListItemAvatar>

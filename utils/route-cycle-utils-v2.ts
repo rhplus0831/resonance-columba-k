@@ -357,7 +357,6 @@ export const calculateRouteCycleV2 = (
     let cycleResult = null;
     while (upperbound - lowerbound > EPS) {
       let search = (upperbound + lowerbound) / 2;
-
       // update graph
       // search for a negative cycle
       let hasNegativeWeight = false;

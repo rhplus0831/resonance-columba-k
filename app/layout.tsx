@@ -9,10 +9,10 @@ import Header from "./components/header/header";
 import "./globals.css";
 import PriceProvider from "./price-provider";
 
-const APP_NAME = "科伦巴商会";
-const APP_DEFAULT_TITLE = "科伦巴商会";
-const APP_TITLE_TEMPLATE = "科伦巴商会 - %s";
-const APP_DESCRIPTION = "雷索纳斯 科伦巴商会 跑商数据站";
+const APP_NAME = "콜럼바";
+const APP_DEFAULT_TITLE = "콜럼바 상공회의소";
+const APP_TITLE_TEMPLATE = "콜럼바 상공회의소 - %s";
+const APP_DESCRIPTION = "레조넌스 콜럼바 상공회의소";
 
 export const metadata: Metadata = {
   applicationName: APP_NAME,

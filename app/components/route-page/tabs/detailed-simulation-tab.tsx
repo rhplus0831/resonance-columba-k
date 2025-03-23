@@ -48,14 +48,14 @@ export default function DetailedSimulationTab(props: DetailedSimulationTabProps)
         <Typography>线路</Typography>
         <Box className="m-4">
           <MultipleSelect
-            label="原产地"
+            label="원산지"
             name="sourceCities"
             allOptions={CITIES}
             selectedOptions={selectedCities.sourceCities}
             handleChange={(selected: CityName[]) => setSourceCities(selected)}
           />
           <MultipleSelect
-            label="目标城市"
+            label="목표 도시"
             name="targetCities"
             allOptions={CITIES}
             selectedOptions={selectedCities.targetCities}
@@ -85,7 +85,7 @@ export default function DetailedSimulationTab(props: DetailedSimulationTabProps)
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                       <TableHead>
                         <TableRow>
-                          <TableCell>产品</TableCell>
+                          <TableCell>제품</TableCell>
                           <TableCell align="right">买价</TableCell>
                           <TableCell align="right">卖价</TableCell>
                           <TableCell align="right">单票舱位</TableCell>

@@ -51,7 +51,7 @@ export default function HeaderAppBar() {
             </Typography>
 
             <MuiLink href="/route" variant="h6" underline="none" component={Link} noWrap className="mr-4 ">
-              科伦巴商会
+              Columba
             </MuiLink>
 
             <Box className="grow" />
@@ -60,33 +60,33 @@ export default function HeaderAppBar() {
             <Box className="grow-0 hidden min-[852px]:flex ">
               <Link href="/prices" className="ml-2">
                 <Button variant="text" className=" px-0" startIcon={<TableViewIcon />}>
-                  数据
+                  데이터
                 </Button>
               </Link>
               <Link href="/route" className="ml-2">
                 <Button variant="text" className=" px-0" startIcon={<RouteOutlinedIcon />}>
-                  路线
+                  루트
                 </Button>
               </Link>
               <Link href="/formula" className="ml-2">
                 <Button variant="text" className=" px-0" startIcon={<PrecisionManufacturingIcon />}>
-                  制造
+                  제조
                 </Button>
               </Link>
               <Link href="/discussion" className="ml-2">
                 <Button variant="text" className=" px-0" startIcon={<ChatBubbleOutlineRoundedIcon />}>
-                  讨论
+                  토론
                 </Button>
               </Link>
               <Link href="/about" className="ml-2">
                 <Button variant="text" className=" px-0" startIcon={<InfoOutlinedIcon />}>
-                  关于
+                  정보
                 </Button>
               </Link>
 
-              <Link href="https://soli-reso.com/" className="ml-2" target="_blank">
+              <Link href="https://res.ujoygames.com/" className="ml-2" target="_blank">
                 <Button variant="outlined" sx={{ color: "black" }} color="error">
-                  雷索纳斯官网
+                레조넌스 공식 홈페이지
                 </Button>
               </Link>
             </Box>
@@ -121,42 +121,42 @@ export default function HeaderAppBar() {
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Link href="/prices" className="mx-auto">
                     <Button variant="text" className="" startIcon={<TableViewIcon />}>
-                      数据
+                      데이터
                     </Button>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Link href="/route" className="mx-auto">
                     <Button variant="text" className="" startIcon={<RouteOutlinedIcon />}>
-                      路线
+                      루트
                     </Button>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Link href="/formula" className="mx-auto">
                     <Button variant="text" className="" startIcon={<PrecisionManufacturingIcon />}>
-                      制造
+                      제조
                     </Button>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Link href="/discussion" className="mx-auto">
                     <Button variant="text" className="" startIcon={<ChatBubbleOutlineRoundedIcon />}>
-                      讨论
+                      토론
                     </Button>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Link href="/about" className="mx-auto">
                     <Button variant="text" className="" startIcon={<InfoOutlinedIcon />}>
-                      关于
+                      정보
                     </Button>
                   </Link>
                 </MenuItem>
                 <MenuItem onClick={handleCloseNavMenu}>
-                  <Link href="https://soli-reso.com/" className="mx-auto" target="_blank">
+                  <Link href="https://res.ujoygames.com/" className="mx-auto" target="_blank">
                     <Button variant="outlined" className="" color="error">
-                      雷索纳斯官网
+                      레조넌스 공식 홈페이지
                     </Button>
                   </Link>
                 </MenuItem>

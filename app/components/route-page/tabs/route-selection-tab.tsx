@@ -45,7 +45,7 @@ export default function RouteSelectionTab(props: RouteSelectionTabProps) {
       <div className="bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-2xl mx-auto my-4 w-full box-border">
         <div className="flex justify-between items-center mb-4">
           <Typography component="h3">
-            选择一个起始城市查看从这个城市出发的最优线路，或选择 任意 查看整体最优线路。
+          출발 도시를 선택하면 해당 도시에서 출발하는 가장 좋은 경로를 볼 수 있으며, 전체를 돌아볼 때 가장 좋은 경로를 보려면 아무거나 선택하세요.
           </Typography>
         </div>
         <div className="flex flex-col">
@@ -59,12 +59,12 @@ export default function RouteSelectionTab(props: RouteSelectionTabProps) {
 
       <Box className="m-4">
         <FormControl fullWidth>
-          <InputLabel id="select-source-city-for-reco-lebel">起始城市</InputLabel>
+          <InputLabel id="select-source-city-for-reco-lebel">시작 도시</InputLabel>
           <Select
             labelId="select-source-city-for-reco-lebel"
             id="select-source-city-for-reco"
             value={selectedCityForReco}
-            label="起始城市"
+            label="시작 도시"
             size="small"
             onChange={(e) => setSelectedCityForReco(e.target.value as CityName)}
           >
@@ -74,7 +74,7 @@ export default function RouteSelectionTab(props: RouteSelectionTabProps) {
               </MenuItem>
             ))}
             <MenuItem key="any" value="any">
-              任意
+              도시 선택
             </MenuItem>
           </Select>
         </FormControl>
@@ -93,7 +93,7 @@ export default function RouteSelectionTab(props: RouteSelectionTabProps) {
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                       <TableHead>
                         <TableRow>
-                          <TableCell>起始城市</TableCell>
+                          <TableCell>시작 도시</TableCell>
                           <TableCell>终点城市</TableCell>
                           <TableCell>累计利润</TableCell>
                           <TableCell>进货书需求</TableCell>

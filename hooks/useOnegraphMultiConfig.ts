@@ -25,7 +25,7 @@ export default function useOnegraphMultiConfig({ playerConfig, onPlayerConfigCha
   });
 
   const getNewConfigName = () => {
-    const reg = /^配置 (\d+)$/;
+    const reg = /^설정 (\d+)$/;
     try {
       const maxOrder = Math.max(
         0,
@@ -35,9 +35,9 @@ export default function useOnegraphMultiConfig({ playerConfig, onPlayerConfigCha
           return num;
         })
       );
-      return `配置 ${maxOrder + 1}`;
+      return `설정 ${maxOrder + 1}`;
     } catch {
-      return `配置 ${multiConfig.length + 1}`;
+      return `설정 ${multiConfig.length + 1}`;
     }
   };
 

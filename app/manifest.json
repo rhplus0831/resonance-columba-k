@@ -1,10 +1,10 @@
 {
-  "name": "科伦巴商会",
-  "short_name": "科伦巴商会",
-  "description": "雷索纳斯 科伦巴商会 跑商数据站",
+  "name": "콜럼바",
+  "short_name": "콜럼바",
+  "description": "레조넌스 콜럼바 상공회의소",
   "shortcuts": [
     {
-      "name": "路线",
+      "name": "루트",
       "url": "/route",
       "icons": [
         {
@@ -14,7 +14,7 @@
       ]
     },
     {
-      "name": "数据",
+      "name": "데이터",
       "url": "/prices",
       "icons": [
         {
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "name": "制造",
+      "name": "제조",
       "url": "/formula",
       "icons": [
         {
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "name": "讨论",
+      "name": "토론",
       "url": "/discussion",
       "icons": [
         {

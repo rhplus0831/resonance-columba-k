@@ -6,15 +6,15 @@ export default function DiscussionPage() {
       <div className="flex justify-between items-center mb-4">
         <Giscus
           id="comments"
-          repo="NathanKun/resonance-columba"
-          repoId="R_kgDOLay83w"
+          repo="pinisok/resonance-columba-k"
+          repoId="R_kgDOOJEgNQ"
           mapping="number"
-          term="28"
+          term="1"
           reactionsEnabled="1"
           emitMetadata="0"
           inputPosition="top"
           theme="preferred_color_scheme"
-          lang="zh-CN"
+          lang="ko-KR"
           loading="lazy"
         />
       </div>

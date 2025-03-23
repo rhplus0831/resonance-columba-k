@@ -46,13 +46,13 @@ export default function ProfitInfo(props: ProfitInfoProps) {
 
   return (
     <Box className="my-2">
-      <Typography>购买原料价格：{consumesPrimaryPrice}</Typography>
+      <Typography>원자재 가격 : {consumesPrimaryPrice}</Typography>
       <Box className="my-1">
-        <Typography>利润：{totalProfit}</Typography>
-        <Typography className="ml-4">固定产出利润：{profit}</Typography>
-        <Typography className="ml-4">额外产出期望利润：{extraProducesProfit}</Typography>
-        <Typography>单件利润：{singleProfit}</Typography>
-        <Typography>额外产出期望利润：{extraProducesProfit}</Typography>
+        <Typography>이익 : {totalProfit}</Typography>
+        <Typography className="ml-4">고정 생산 이익 : {profit}</Typography>
+        <Typography className="ml-4">추가 생산 기대 이익 : {extraProducesProfit}</Typography>
+        <Typography>단일 이익 : {singleProfit}</Typography>
+        <Typography>추가 생산 기대 이익 : {extraProducesProfit}</Typography>
       </Box>
     </Box>
   );

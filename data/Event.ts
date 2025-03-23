@@ -6,7 +6,7 @@ type GameEvent = ResonanceSkill & {
   playConfigurable: boolean;
   taxVariation: {
     product?: {
-      [key: string]: number; // ex: 红茶: -5 for -5% tax
+      [key: string]: number; // ex: 홍차: -5 for -5% tax
     };
     city?: {
       [key: string]: number;
@@ -15,21 +15,21 @@ type GameEvent = ResonanceSkill & {
 };
 
 export const EVENTS: GameEvent[] = [
-  // 红茶战争 2024/03/21 - 2024/04/11
-  // 红茶战争 2024/07/30 - 2024/08/20
-  // 红茶战争 常驻
+  // 홍차 전쟁 2024/03/21 - 2024/04/11(CN)
+  // 홍차 전쟁 2024/07/30 - 2024/08/20(CN)
+  // 홍차 전쟁 영구
   {
-    name: "红茶战争",
-    description: "红茶购买量+50%, 红茶税率-5%",
+    name: "홍차 전쟁",
+    description: "홍차 구매 수량 +50%, 홍차 세율 -5%",
     playConfigurable: true,
     buyMore: {
       product: {
-        红茶: 50,
+        홍차: 50,
       },
     },
     taxVariation: {
       product: {
-        红茶: -0.05,
+        홍차: -0.05,
       },
     },
   },

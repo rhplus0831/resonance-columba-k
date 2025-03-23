@@ -10,8 +10,8 @@ export const findFatigue = (fromCity: string, toCity: string, playerConfigRoles:
     return fatigue;
   }
 
-  // find if player has resonance level 1 波克士
-  if (playerConfigRoles["波克士"]?.resonance === 1) {
+  // find if player has resonance level 1 BO-X
+  if (playerConfigRoles["BO-X"]?.resonance === 1) {
     fatigue -= 1;
   }
 

@@ -288,7 +288,7 @@ export default function PricesTable() {
     // highest profit group
     result.unshift({
       id: "highest-profit-group",
-      header: "最高利润",
+      header: "최대 수익",
 
       columns: [
         {
@@ -331,12 +331,12 @@ export default function PricesTable() {
     // source city group
     result.unshift({
       id: "source-city-group",
-      header: "原产地",
+      header: "원산지",
       columns: [
         {
           id: "source-city",
           accessorFn: (row: ProductRow) => row.sourceCity,
-          header: "城市",
+          header: "도시",
           enableSorting: false,
           size: 50,
           enableEditing: false,
@@ -344,7 +344,7 @@ export default function PricesTable() {
         {
           id: "source-productName",
           accessorFn: (row: ProductRow) => row.productName,
-          header: "产品",
+          header: "제품",
           enableSorting: false,
           size: 50,
           enableEditing: false,
@@ -375,7 +375,7 @@ export default function PricesTable() {
 
           //   // craftable product don't have variation
           //   if (row.original.craftable) {
-          //     return <>制造</>;
+          //     return <>제조</>;
           //   }
 
           //   return <VariationInput value={cell.getValue()} save={save} cancel={cancel} />;
@@ -451,14 +451,14 @@ export default function PricesTable() {
     return (
       <div>
         <MultipleSelect
-          label="原产地"
+          label="원산지"
           name="sourceCities"
           allOptions={CITIES}
           selectedOptions={selectedCities.sourceCities}
           handleChange={(selected: CityName[]) => setSourceCities(selected)}
         />
         <MultipleSelect
-          label="目标城市"
+          label="목표 도시"
           name="targetCities"
           allOptions={CITIES}
           selectedOptions={selectedCities.targetCities}

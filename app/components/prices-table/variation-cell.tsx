@@ -11,7 +11,7 @@ export default function VariationCell(props: {
 
   // if the product is craftable & the cell is in it's source city, don't show variation
   if (row.original.craftable && column.id === "source-variation") {
-    return <span>制造</span>;
+    return <span>제조</span>;
   }
 
   return (

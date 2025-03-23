@@ -3,132 +3,118 @@
 // it uses comments to mark the place to insert new role images
 
 import { StaticImageData } from "next/image";
-import 亚莉奈 from "/public/roles/head/亚莉奈.png";
-import 伊尔 from "/public/roles/head/伊尔.png";
-import 伊洛娜 from "/public/roles/head/伊洛娜.png";
-import 伊索斯 from "/public/roles/head/伊索斯.png";
-import 伽罗尔 from "/public/roles/head/伽罗尔.png";
-import 冯·里奈 from "/public/roles/head/冯·里奈.png";
-import 卡塔斯 from "/public/roles/head/卡塔斯.png";
-import 卡洛琳 from "/public/roles/head/卡洛琳.png";
-import 卡莱雅 from "/public/roles/head/卡莱雅.png";
-import 卡莲 from "/public/roles/head/卡莲.png";
-import 叶珏 from "/public/roles/head/叶珏.png";
-import 塔拉 from "/public/roles/head/塔拉.png";
-import 塞西尔 from "/public/roles/head/塞西尔.png";
-import 夏尔 from "/public/roles/head/夏尔.png";
-import 夏洛蒂 from "/public/roles/head/夏洛蒂.png";
-import 多萝西 from "/public/roles/head/多萝西.png";
-import 奈弥 from "/public/roles/head/奈弥.png";
-import 妮蔻拉 from "/public/roles/head/妮蔻拉.png";
-import 安菲娅 from "/public/roles/head/安菲娅.png";
-import 宵月 from "/public/roles/head/宵月.png";
-import 山岚 from "/public/roles/head/山岚.png";
-import 帕拉笛 from "/public/roles/head/帕拉笛.png";
-import 弗兰 from "/public/roles/head/弗兰.png";
-import 星花 from "/public/roles/head/星花.png";
-import 晃 from "/public/roles/head/晃.png";
-import 朱利安 from "/public/roles/head/朱利安.png";
-import 柯娜 from "/public/roles/head/柯娜.png";
-import 波克士 from "/public/roles/head/波克士.png";
-import 海因里希 from "/public/roles/head/海因里希.png";
-import 狮鬃 from "/public/roles/head/狮鬃.png";
-import 瑞秋 from "/public/roles/head/瑞秋.png";
-import 瓦伦汀 from "/public/roles/head/瓦伦汀.png";
-import 甘雅 from "/public/roles/head/甘雅.png";
-import 索玛 from "/public/roles/head/索玛.png";
-import 约书亚 from "/public/roles/head/约书亚.png";
-import 艾略特 from "/public/roles/head/艾略特.png";
-import 苍叶 from "/public/roles/head/苍叶.png";
-import 苏恩 from "/public/roles/head/苏恩.png";
-import 苔妮 from "/public/roles/head/苔妮.png";
-import 莉薇娅 from "/public/roles/head/莉薇娅.png";
-import 菲妮娅 from "/public/roles/head/菲妮娅.png";
-import 薇尔岚 from "/public/roles/head/薇尔岚.png";
-import 跳鼠 from "/public/roles/head/跳鼠.png";
-import 遥 from "/public/roles/head/遥.png";
-import 那由他 from "/public/roles/head/那由他.png";
-import 闻笙 from "/public/roles/head/闻笙.png";
-import 阿尔喀娜 from "/public/roles/head/阿尔喀娜.png";
-import 阿知波 from "/public/roles/head/阿知波.png";
-import 隼 from "/public/roles/head/隼.png";
-import 雅莱 from "/public/roles/head/雅莱.png";
-import 雷火 from "/public/roles/head/雷火.png";
-import 霖 from "/public/roles/head/霖.png";
-import 静流 from "/public/roles/head/静流.png";
-import 静流·逐夏 from "/public/roles/head/静流·逐夏.png";
-import 马吉拉 from "/public/roles/head/马吉拉.png";
-import 魇 from "/public/roles/head/魇.png";
-import 黛丝莉 from "/public/roles/head/黛丝莉.png";
-import 佩罗塔 from "/public/roles/head/佩罗塔.png";
-import 罗洁尔·定格 from "/public/roles/head/罗洁尔·定格.png";
-import 无名 from "/public/roles/head/无名.png";
-import 乌刹娜 from "/public/roles/head/乌刹娜.png";
-import 罗洁尔 from "/public/roles/head/罗洁尔.png";
+import 카타스 from "/public/roles/head/카타스.png";
+import 줄리안 from "/public/roles/head/줄리안.png";
+import 마키라 from "/public/roles/head/마키라.png";
+import 리비아 from "/public/roles/head/리비아.png";
+import 솔럼 from "/public/roles/head/솔럼.png";
+import 마루하 from "/public/roles/head/마루하.png";
+import 세실 from "/public/roles/head/세실.png";
+import 레이카 from "/public/roles/head/레이카.png";
+import 데시레 from "/public/roles/head/데시레.png";
+import 샬롯 from "/public/roles/head/샬롯.png";
+import 아오바 from "/public/roles/head/아오바.png";
+import 엘리엇 from "/public/roles/head/엘리엇.png";
+import 요이즈키 from "/public/roles/head/요이즈키.png";
+import 이로나 from "/public/roles/head/이로나.png";
+import 아르카나 from "/public/roles/head/아르카나.png";
+import 나유타 from "/public/roles/head/나유타.png";
+import 소마 from "/public/roles/head/소마.png";
+import 도로시 from "/public/roles/head/도로시.png";
+import 카렌 from "/public/roles/head/카렌.png";
+import 리바 from "/public/roles/head/리바.png";
+import 스텔라 from "/public/roles/head/스텔라.png";
+import 레이첼 from "/public/roles/head/레이첼.png";
+import 페니아 from "/public/roles/head/페니아.png";
+import 발렌타인 from "/public/roles/head/발렌타인.png";
+import 아치와 from "/public/roles/head/아치와.png";
+import 문생 from "/public/roles/head/문생.png";
+import 리나_본 from "/public/roles/head/리나 본.png";
+import 네즈미 from "/public/roles/head/네즈미.png";
+import 야마아라시 from "/public/roles/head/야마아라시.png";
+import BO_X from "/public/roles/head/BO-X.png";
+import 베를렌 from "/public/roles/head/베를렌.png";
+import 예주 from "/public/roles/head/예주.png";
+import 조슈아 from "/public/roles/head/조슈아.png";
+import 하야부사 from "/public/roles/head/하야부사.png";
+import 나비 from "/public/roles/head/나비.png";
+import 이엘 from "/public/roles/head/이엘.png";
+import 린 from "/public/roles/head/린.png";
+import 간야 from "/public/roles/head/간야.png";
+import 니콜라 from "/public/roles/head/니콜라.png";
+import 캐롤라인 from "/public/roles/head/캐롤라인.png";
+import 레비스 from "/public/roles/head/레비스.png";
+import 샤이어 from "/public/roles/head/샤이어.png";
+import 하인리히 from "/public/roles/head/하인리히.png";
+import 테니 from "/public/roles/head/테니.png";
+import 안피아 from "/public/roles/head/안피아.png";
+import 시즈루·여름_바캉스 from "/public/roles/head/시즈루·여름 바캉스.png";
+import 아일리 from "/public/roles/head/아일리.png";
+import 이소스 from "/public/roles/head/이소스.png";
+import 페로타 from "/public/roles/head/페로타.png";
+import 미스_골드 from "/public/roles/head/미스 골드.png";
+import 무메이 from "/public/roles/head/무메이.png";
+import 라지엘·회상 from "/public/roles/head/라지엘·회상.png";
+import 우샤나 from "/public/roles/head/우샤나.png";
+import 라지엘 from "/public/roles/head/라지엘.png";
+import 레카지아 from "/public/roles/head/레카지아.png";
 // import end
 
 export const roleImages: { [roleName: string]: StaticImageData } = {
-  亚莉奈,
-  伊尔,
-  伊洛娜,
-  伽罗尔,
-  冯·里奈,
-  卡塔斯,
-  卡洛琳,
-  卡莱雅,
-  卡莲,
-  叶珏,
-  塔拉,
-  塞西尔,
-  夏洛蒂,
-  多萝西,
-  奈弥,
-  妮蔻拉,
-  宵月,
-  山岚,
-  弗兰,
-  星花,
-  晃,
-  朱利安,
-  柯娜,
-  波克士,
-  海因里希,
-  狮鬃,
-  瑞秋,
-  瓦伦汀,
-  甘雅,
-  索玛,
-  约书亚,
-  艾略特,
-  苍叶,
-  苏恩,
-  苔妮,
-  莉薇娅,
-  菲妮娅,
-  薇尔岚,
-  跳鼠,
-  遥,
-  那由他,
-  闻笙,
-  阿尔喀娜,
-  阿知波,
-  雷火,
-  霖,
-  静流,
-  马吉拉,
-  魇,
-  黛丝莉,
-  夏尔,
-  安菲娅,
-  静流·逐夏,
-  伊索斯,
-  雅莱,
-  帕拉笛,
-  隼,
-  佩罗塔,
-  罗洁尔·定格,
-  无名,
-  乌刹娜,
-  罗洁尔,
+  카타스,
+  줄리안,
+  마키라,
+  리비아,
+  솔럼,
+  마루하,
+  세실,
+  레이카,
+  데시레,
+  샬롯,
+  아오바,
+  엘리엇,
+  요이즈키,
+  이로나,
+  아르카나,
+  나유타,
+  소마,
+  도로시,
+  카렌,
+  리바,
+  스텔라,
+  레이첼,
+  페니아,
+  발렌타인,
+  아치와,
+  문생,
+  리나_본,
+  네즈미,
+  야마아라시,
+  BO_X,
+  베를렌,
+  예주,
+  조슈아,
+  하야부사,
+  나비,
+  이엘,
+  린,
+  간야,
+  니콜라,
+  캐롤라인,
+  레비스,
+  샤이어,
+  하인리히,
+  테니,
+  안피아,
+  시즈루·여름_바캉스,
+  아일리,
+  이소스,
+  페로타,
+  미스_골드,
+  무메이,
+  라지엘·회상,
+  우샤나,
+  라지엘,
+  레카지아,
   // export role images end
 };

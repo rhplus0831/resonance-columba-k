@@ -79,7 +79,7 @@ export default function ProductUnlockSelect(props: ProductUnlockSelectProps) {
           {
             value: 0, // index of the unlockable products, start from 1 because 0 means no product unlocked
             scale: 0, // invest value
-            label: "未解锁",
+            label: "잠금",
           },
         ];
 
@@ -120,7 +120,7 @@ export default function ProductUnlockSelect(props: ProductUnlockSelectProps) {
               min={0}
               max={marks.at(-1)!.value}
               valueLabelDisplay="on"
-              valueLabelFormat={(x) => (x >= 10000 ? `${(x / 10000).toFixed(0)}万` : x)}
+              valueLabelFormat={(x) => (x >= 10000 ? `${(x / 10000).toFixed(0)}만` : x)}
               orientation={smallScreen ? "vertical" : "horizontal"}
               sx={
                 smallScreen
