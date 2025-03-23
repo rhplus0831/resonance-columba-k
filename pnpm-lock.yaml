@@ -39,6 +39,9 @@ importers:
       '@next/third-parties':
         specifier: 15.1.3
         version: 15.1.3(next@15.1.3(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(react@19.0.0)
+      '@pinisok/resonance-firestore':
+        specifier: ^1.0.5
+        version: 1.0.5
       '@serwist/next':
         specifier: 9.0.11
         version: 9.0.11(next@15.1.3(@babel/core@7.26.10)(@opentelemetry/api@1.9.0)(react-dom@19.0.0(react@19.0.0))(react@19.0.0))(typescript@5.7.2)
@@ -109,9 +112,6 @@ importers:
       '@eslint/js':
         specifier: ^9.23.0
         version: 9.23.0
-      '@pinisok/resonance-firestore':
-        specifier: ^1.0.1
-        version: 1.0.1
       '@testing-library/dom':
         specifier: ^10.4.0
         version: 10.4.0
@@ -1312,8 +1312,8 @@ packages:
     resolution: {integrity: sha512-3giAOQvZiH5F9bMlMiv8+GSPMeqg0dbaeo58/0SlA9sxSqZhnUtxzX9/2FzyhS9sWQf5S0GJE0AKBrFqjpeYcg==}
     engines: {node: '>=8.0.0'}
 
-  '@pinisok/resonance-firestore@1.0.1':
-    resolution: {integrity: sha512-QUz7NE1pwR6ZOFymEOZMeaC3LMIzdUq93HEI5qWSRBtIyhV81s3REVXX8ATK/xfzb/g2ZLoeD+xdCpW2T7AKuQ==, tarball: https://npm.pkg.github.com/download/@pinisok/resonance-firestore/1.0.1/2b517246420b66317276f7e5099f2c2f87f8e3f1}
+  '@pinisok/resonance-firestore@1.0.5':
+    resolution: {integrity: sha512-S+wmd3hbov+oDj8z/mS/HBMv37It3MsXw/urkJ4MFR7zfge2Hcdwwi+H911EYwT0uT/P3AkgZDvaqEUft+4KDg==, tarball: https://npm.pkg.github.com/download/@pinisok/resonance-firestore/1.0.5/c4518ad7c7442b659c7814fa04fcc4de9e09a121}
 
   '@pkgjs/parseargs@0.11.0':
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
@@ -5417,7 +5417,7 @@ snapshots:
   '@opentelemetry/api@1.9.0':
     optional: true
 
-  '@pinisok/resonance-firestore@1.0.1':
+  '@pinisok/resonance-firestore@1.0.5':
     dependencies:
       axios: 1.8.4
       resonance-data-columba-k: 1.0.9

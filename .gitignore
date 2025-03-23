@@ -44,6 +44,3 @@ yarn-error.log*
 
 # bundle analyzer
 /analyze
-
-# npmrc
-.npmrc

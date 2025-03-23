@@ -32,7 +32,7 @@ export default function PriceProvider({ children }: { children: React.ReactNode 
   const [data, setData] = useState<GetPricesProducts>({});
   const [lastFetch, setLastFetch] = useState<number | null>(0);
   const focus = useHasFocus();
-
+  
   const fetchData = useCallback(() => {
     console.info(new Date(), "fetching data");
     fetch("/api/get-prices")
