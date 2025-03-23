@@ -124,7 +124,7 @@ export default function OneGraphRouteDialog(props: OneGraphRouteDialogProps) {
             )}
             <DialogContentText component="div">구매 상품 : {goDisplayData.buyProducts}</DialogContentText>
             <DialogContentText>고이익 상품 : {goDisplayData.profitOrder}</DialogContentText>
-            <DialogContentText>필요 주문서 : {goDisplayData.usedLot}</DialogContentText>
+            <DialogContentText>필요 화물칸 : {goDisplayData.usedLot}</DialogContentText>
             <DialogContentText>
               피로도 :{goDisplayData.fatigue}
               {bargainFatigueTotalGo > 0 ? ` (议价占${bargainFatigueTotalGo})` : ""}

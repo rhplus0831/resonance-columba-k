@@ -14,7 +14,7 @@ export default function DiscussionPage() {
           emitMetadata="0"
           inputPosition="top"
           theme="preferred_color_scheme"
-          lang="ko-KR"
+          lang="ko"
           loading="lazy"
         />
       </div>

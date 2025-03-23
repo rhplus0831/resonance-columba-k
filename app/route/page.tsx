@@ -19,7 +19,7 @@ export default function RoutePage() {
 
   /* tabs */
   const [tabIndex, setTabIndex] = useState(0);
-  const tabNames = ["一图流", "个性化设置", "线路优选", "硬核模拟", "环路推荐", "计算说明"];
+  const tabNames = ["그래프", "개인 설정", "루트 최적화", "하드코어 시물레이션", "루프 추천", "계산 원리"];
   const onTabChange = (newIndex: number) => {
     setTabIndex(newIndex);
     trackTabChange(newIndex);
@@ -77,7 +77,7 @@ export default function RoutePage() {
         </Tabs>
       </Box>
 
-      {/* 一图流 */}
+      {/* 그래프 */}
       <div role="tabpanel" hidden={tabIndex !== 0}>
         <OnegraphTab
           playerConfig={playerConfig}
@@ -86,7 +86,7 @@ export default function RoutePage() {
         />
       </div>
 
-      {/* 个性化设置 */}
+      {/* 개인 설정 */}
       <div role="tabpanel" hidden={tabIndex !== 1}>
         <PlayerConfigTab
           playerConfig={playerConfig}
@@ -101,7 +101,7 @@ export default function RoutePage() {
         />
       </div>
 
-      {/* 线路优选 */}
+      {/* 루트 최적화 */}
       <div role="tabpanel" hidden={tabIndex !== 2}>
         <RouteSelectionTab
           playerConfig={playerConfig}
@@ -120,12 +120,12 @@ export default function RoutePage() {
         />
       </div>
 
-      {/* 环路推荐 */}
+      {/* 루프 추천 */}
       <div role="tabpanel" hidden={tabIndex !== 4}>
         <RouteCycleTab playerConfig={playerConfig} prices={prices} />
       </div>
 
-      {/* 计算说明 */}
+      {/* 계산 원리 */}
       <div role="tabpanel" hidden={tabIndex !== 5}>
         <div className="bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-2xl mx-auto my-4 w-full box-border">
           <div className="flex flex-col">

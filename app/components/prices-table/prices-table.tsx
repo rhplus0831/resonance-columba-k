@@ -96,9 +96,9 @@ export default function PricesTable() {
           let timeDiff: string;
           if (timeDiffNum >= 60) {
             timeDiffNum = timeDiffNum / 60;
-            timeDiff = timeDiffNum.toFixed(1) + "小时";
+            timeDiff = timeDiffNum.toFixed(1) + "시간 전";
           } else {
-            timeDiff = timeDiffNum + "分钟";
+            timeDiff = timeDiffNum + "분 전";
           }
 
           // calculate profit
@@ -196,7 +196,7 @@ export default function PricesTable() {
             {
               id: `targetCity-${city}-variation`,
               accessorFn: (row: ProductRow) => row.targetCity[city]?.variation,
-              header: "价位",
+              header: "시세",
               size: 50,
               Cell: VariationCell,
               muiTableBodyCellProps: getVariationCellMuiProps,
@@ -223,7 +223,7 @@ export default function PricesTable() {
             {
               id: `targetCity-${city}-trend`,
               accessorFn: (row: ProductRow) => row.targetCity[city]?.trend,
-              header: "趋势",
+              header: "가격 추세",
               size: 50,
               Cell: TrendCell,
               muiTableBodyCellProps: {
@@ -253,14 +253,14 @@ export default function PricesTable() {
             {
               id: `targetCity-${city}-time`,
               accessorFn: (row: ProductRow) => row.targetCity[city]?.timeDiff,
-              header: "更新",
+              header: "업데이트",
               size: 50,
               enableEditing: false,
             },
             {
               id: `targetCity-${city}-singleprofit`,
               accessorFn: (row: ProductRow) => row.targetCity[city]?.singleProfit,
-              header: "利润",
+              header: "수익",
               size: 50,
               enableEditing: false,
               muiTableBodyCellProps: {
@@ -272,7 +272,7 @@ export default function PricesTable() {
             {
               id: `targetCity-${city}-price`,
               accessorFn: (row: ProductRow) => row.targetCity[city]?.price,
-              header: "价格",
+              header: "가격",
               size: 50,
               enableEditing: false,
               muiTableBodyCellProps: {
@@ -357,7 +357,7 @@ export default function PricesTable() {
         {
           id: "source-variation",
           accessorFn: (row: ProductRow) => row.source?.variation,
-          header: "价位",
+          header: "시세",
           size: 50,
           Cell: VariationCell,
           muiTableBodyCellProps: getVariationCellMuiProps,
@@ -384,7 +384,7 @@ export default function PricesTable() {
         {
           id: "source-trend",
           accessorFn: (row: ProductRow) => row.source?.trend,
-          header: "趋势",
+          header: "가격 추세",
           size: 50,
           Cell: TrendCell,
           muiTableBodyCellProps: {
@@ -413,7 +413,7 @@ export default function PricesTable() {
         {
           id: "source-price",
           accessorFn: (row: ProductRow) => row.source?.price,
-          header: "价格",
+          header: "가격",
           size: 50,
           enableEditing: false,
           muiTableBodyCellProps: {
@@ -425,7 +425,7 @@ export default function PricesTable() {
         {
           id: "source-time",
           accessorFn: (row: ProductRow) => row.source?.timeDiff,
-          header: "更新",
+          header: "업데이트",
           size: 50,
           enableEditing: false,
           muiTableBodyCellProps: {

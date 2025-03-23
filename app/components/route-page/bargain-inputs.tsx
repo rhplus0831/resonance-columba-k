@@ -12,7 +12,7 @@ export default function BargainInputs(props: {
     <>
       <NumberInput
         className={className}
-        label="抬价"
+        label="인상"
         InputProps={{ endAdornment: <InputAdornment position="end">%</InputAdornment> }}
         min={0}
         max={20}
@@ -25,7 +25,7 @@ export default function BargainInputs(props: {
       />
       <NumberInput
         className={className}
-        label="抬价疲劳"
+        label="인상 피로도"
         min={0}
         max={100}
         defaultValue={0}
@@ -35,7 +35,7 @@ export default function BargainInputs(props: {
       />
       <NumberInput
         className={className}
-        label="砍价"
+        label="인하"
         InputProps={{ endAdornment: <InputAdornment position="end">%</InputAdornment> }}
         min={0}
         step={0.1}
@@ -48,7 +48,7 @@ export default function BargainInputs(props: {
       />
       <NumberInput
         className={className}
-        label="砍价疲劳"
+        label="인하 피로도"
         min={0}
         max={100}
         defaultValue={0}
