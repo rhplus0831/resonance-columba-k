@@ -1,59 +1,63 @@
 ---
-name: 科伦巴商会
-slug: resonance-colombia
-description: 雷索纳斯 科伦巴商会 数据分享站
+name: 콜룸바 상공회의소
+slug: resonance-roundtable
+description: 레조넌스 콜룸바 상공회의소 데이터 공유 스테이션
 framework: Next.js
 css: Tailwind
 database: Firebase Cloud Firestore
 ---
 
-# 雷索纳斯 科伦巴商会 数据分享站
+# 레조넌스 콜룸바 상공회의소 데이터 공유 스테이션
 
-[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/NathanKun)
+ [![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/pinisok)
 
-## 网站地址
+## 웹사이트트
 
 https://www.resonance-columba.com/
 
 ## Development
 ![Tech Stack](https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&line1=react%2Creact%2Cauto%3Bnext.js%2Cnext.js%2Cffffff%3Bvercel%2Cvercel%2Cffffff%3Bfirebase%2Cfirebase%2Cauto%3B&title=Tech%20Stack&align=center&titleAlign=center&fontSize=20&lineHeight=10)
 
-### 本地开发
+### 개발 환경
 
-#### 分支
-`main` 分支是生产环境分支，`develop` 分支是开发环境分支。PR请提交到`develop`分支。
+#### 브랜치
+`main` : 프로덕션 환경, `develop`: 개발 환경 브랜치 
+`develop` 브랜치로 PR을 제출해주세요.
 
 #### Web - Next.js
 
-##### 软件
+##### 환경
 Node.js 18  
-包管理器 [pnpm](https://pnpm.io/installation)
+패키지 관리자 [pnpm](https://pnpm.io/installation)
 
-##### 环境变量
-复制 `.env.example` 为 `.env.local` 
+##### 환경 변수
+`.env.example` 파일을 `.env.local` 로 복사하고 수정해서 사용하세요. 
 
 
-#### 数据库 - Firebase Cloud Firestore
+#### 데이터베이스스 - Firebase Cloud Firestore
 
-##### 软件
-[firebase-cli](https://firebaseopensource.com/projects/firebase/firebase-tools/#installation) 用于初始化firebase项目，并启动本地firestore模拟器  
-[firestore emulator](https://firebase.google.com/docs/emulator-suite/connect_firestore?hl=zh-cn)  本地数据库
-在`.env.local`中设置环境变量`FIRESTORE_EMULATOR_HOST="127.0.0.1:8080"`后，firebase-admin会自动连接firestore模拟器数据库。
+##### 소프트웨어어
+[firebase-cli](https://firebaseopensource.com/projects/firebase/firebase-tools/#installation) firebase 프로젝트를 설정하고, 로컬 firestore 시뮬레이터에 사용됩니다.
+[firestore emulator](https://firebase.google.com/docs/emulator-suite/connect_firestore?hl=zh-cn)  로컬 데이터베이스스
+`.env.local` 파일에서 `FIRESTORE_EMULATOR_HOST="127.0.0.1:8080"`로 설정하면, firebase-admin이 자동으로 firestore 에뮬레이터과 연결됩니다.
 
-### 部署
+### 배포
 #### Vercel
-该Next.js项目已经配置了Vercel的自动部署，只需要将代码提交到`develop`分支，Vercel会自动部署到[预览环境](https://preview.resonance-columba.com/)。  
-`main`分支的代码会自动部署到[生产环境](https://www.resonance-columba.com/)。  
-而所有其他分支的代码会自动部署到使用`vercel.app`域名的预览环境。  
-Vercel Functions(APIs)已配置了使用位于香港的服务器。
+해당 Next.js 프로젝트는 Vercel의 자동 배포로 구성되어 있습니다.
+`main` 브랜치의 코드는 자동으로 [프로덕션 환경](https://resonance-roundtable.vercel.app/)에 배포됩니다.
+다른 모든 브랜치의 코드는 `vercel.app` 도메인을 통해 프리뷰 환경으로 배포됩니다.  
+Vercel Functions(APIs) 는 서울에 위치한 서버를 사용하도록 설정되어 있습니다.
 
 #### Firebase Cloud Firestore
-数据库使用的是Firebase Cloud Firestore，不需要手动部署。  
-网站的所有预览环境和生产环境连接的同一个数据库，其中生产环境使用`columba`集合，所有预览环境共同使用`columba-dev`集合。  
-Firebase项目已配置了使用位于香港的服务器。
+Firebase Cloud Firestore 데이터 베이스를 사용합니다.
+웹사이트의 프로덕션/프리뷰 환경 모두 같은 데이터베이스에 연결되어 있습니다.
+프로덕션 환경은 `columba` 컬렉션을, 미리보기 환경은 `columba-dev` 컬렉션을 사용합니다.  
+Firebase 프로젝트
 
-## Contributors
+## 원본 프로젝트 기여자
 
+원작자 스폰서
+[![](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=%23fe8e86)](https://github.com/sponsors/NathanKun)
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
 <!-- markdownlint-disable -->
