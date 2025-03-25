@@ -34,18 +34,18 @@ export default function DetailedSimulationTab(props: DetailedSimulationTabProps)
     <>
       <div className="bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-2xl mx-auto my-4 w-full box-border">
         <div className="flex justify-between items-center mb-4">
-          <Typography component="h3">选择一个或多个起始城市以及终点城市，查看所有线路以及最优交易组合。</Typography>
+          <Typography component="h3">출발 도시와 도착 도시를 하나 이상 선택해 모든 노선과 최적의 특가 조합을 확인하세요</Typography>
         </div>
         <div className="flex flex-col">
-          <Typography className="py-1">需要填写个性化设置。</Typography>
-          <Typography className="py-1">路线中的产品已经按利润进行了排序，排第一的商品为利润最高的商品。</Typography>
-          <Typography className="py-1">累计利润为当前商品以及它上面所有商品的单批利润的和。累计舱位同理。</Typography>
-          <Typography className="py-1">列车长请根据补货意愿从上往下选择一个或多个商品进行购买。</Typography>
+          <Typography className="py-1">개인 설정이 필요합니다.</Typography>
+          <Typography className="py-1">노선에 있는 상품은 이익 순으로 정렬되어 있습니다. 첫 번째 상품은 가장 높은 이익을 가진 상품입니다.</Typography>
+          <Typography className="py-1">누적 이익은 현재 상품과 그 위에 있는 모든 상품의 단품 이익의 합입니다. 누적 컨테이너 수도 마찬가지입니다.</Typography>
+          <Typography className="py-1">열차장은 희망에 따라 위에서 아래로 구매할 품목을 하나 이상 선택해주세요</Typography>
         </div>
       </div>
 
       <Box className="m-4 flex justify-center items-center">
-        <Typography>线路</Typography>
+        <Typography>노선</Typography>
         <Box className="m-4">
           <MultipleSelect
             label="원산지"
@@ -86,17 +86,17 @@ export default function DetailedSimulationTab(props: DetailedSimulationTabProps)
                       <TableHead>
                         <TableRow>
                           <TableCell>제품</TableCell>
-                          <TableCell align="right">买价</TableCell>
-                          <TableCell align="right">卖价</TableCell>
-                          <TableCell align="right">单票舱位</TableCell>
-                          <TableCell align="right">单票利润</TableCell>
-                          <TableCell align="right">单票累计利润</TableCell>
-                          <TableCell align="right">单票累计舱位</TableCell>
-                          <TableCell align="right">补货累计利润</TableCell>
-                          <TableCell align="right">补货累计舱位</TableCell>
-                          <TableCell align="right">补货次数</TableCell>
-                          <TableCell align="right">疲劳</TableCell>
-                          <TableCell align="right">单位疲劳利润</TableCell>
+                          <TableCell align="right">구매가</TableCell>
+                          <TableCell align="right">판매가</TableCell>
+                          <TableCell align="right">단일 화물칸</TableCell>
+                          <TableCell align="right">단일 이익</TableCell>
+                          <TableCell align="right">단일 누적 이익</TableCell>
+                          <TableCell align="right">단일 누적 화물칸</TableCell>
+                          <TableCell align="right">보충 누적 이익</TableCell>
+                          <TableCell align="right">보충 누적 화물칸</TableCell>
+                          <TableCell align="right">보충 횟수</TableCell>
+                          <TableCell align="right">피로도</TableCell>
+                          <TableCell align="right">피로도당 이익</TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>
