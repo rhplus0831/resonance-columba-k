@@ -129,10 +129,10 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
         <Table>
           <TableHead>
             <TableRow>
-              <TableCell align="center">乘员</TableCell>
+              <TableCell align="center">승무원</TableCell>
               {[0, 1, 4, 5].map((resonance) => (
                 <TableCell key={`resonance-${resonance}`} align="center">
-                  共振{resonance}
+                  공명{resonance}
                 </TableCell>
               ))}
             </TableRow>
@@ -153,7 +153,7 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
                     onClick={() => handleResonanceLevelClick(role, 0)}
                     className="h-16"
                   >
-                    无
+                    없음
                   </Button>
                 </TableCell>
 
