@@ -73,12 +73,11 @@ const validConfig1 = {
     "자유 무역항-7": 14,
     "아니타 발사 센터": 16,
     케이프시: 6,
-    포트리스시: 6,
     그로누시: 5,
     스톰아이시: 4,
   },
   roles: {
-    예주주: {
+    예주: {
       resonance: 5,
     },
     엘리엇: {
@@ -108,8 +107,8 @@ const validConfig1 = {
     disabled: true,
   },
   productUnlockStatus: {
-    琥珀: true,
-    防弹背心: false,
+    호박: true,
+    방탄조끼: false,
   },
   events: {
     "홍차 전쟁": {
