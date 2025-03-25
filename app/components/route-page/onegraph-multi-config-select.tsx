@@ -159,10 +159,10 @@ export default function OnegraphMultiConfigSelect({
         }}
       >
         <Typography className="m-4">
-          "설정 추가"를 클릭하면 현재 원그래프 설정이 새로운 설정으로 저장되며, 설정을 클릭하면 해당 설정을 다시 적용할 수 있습니다.
+          &quot;설정 추가&quot;를 클릭하면 현재 원그래프 설정이 새로운 설정으로 저장되며, 설정을 클릭하면 해당 설정을 다시 적용할 수 있습니다.
         </Typography>
         <Typography className="m-4">
-          설정을 우클릭(모바일에서는 길게 누르기)하면 "이름 변경", "제거" 등의 작업 메뉴가 표시됩니다. "업데이트"는 현재 원그래프 설정을 해당 설정으로 업데이트하는 것을 의미합니다.
+          설정을 우클릭(모바일에서는 길게 누르기)하면 &quot;이름 변경&quot;, &quot;제거&quot; 등의 작업 메뉴가 표시됩니다. &quot;업데이트&quot;는 현재 원그래프 설정을 해당 설정으로 업데이트하는 것을 의미합니다.
         </Typography>
       </Popover>
     </>
