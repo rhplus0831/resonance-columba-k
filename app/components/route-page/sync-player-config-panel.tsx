@@ -59,10 +59,10 @@ export default function SyncPlayerConfigPanel(props: SyncPlayerConfigPanelProps)
       setLoading(false);
 
       if (success) {
-        openSnackBar("下载成功");
+        openSnackBar("다운로드 성공");
       } else {
         // TODO: show error message
-        openSnackBar("下载失败，请检查ID是否正确。");
+        openSnackBar("다운로드 실패, ID가 올바른지 확인하세요.");
       }
       sendGTMEvent({
         event: "sync_player_config",
@@ -88,9 +88,9 @@ export default function SyncPlayerConfigPanel(props: SyncPlayerConfigPanelProps)
     setLoading(false);
 
     if (success) {
-      openSnackBar("上传成功");
+      openSnackBar("업로드 성공");
     } else {
-      openSnackBar("上传失败。");
+      openSnackBar("업로드 실패");
     }
 
     sendGTMEvent({

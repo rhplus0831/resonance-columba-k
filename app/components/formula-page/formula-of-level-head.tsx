@@ -3,11 +3,11 @@ import { Typography } from "@mui/material";
 import Image from "next/image";
 import { Fragment } from "react";
 import FatigueIcon from "../icons/FatigueIcon";
-import 冷凝核心Src from "/public/engine-cores/冷凝核心.png";
-import 混响核心Src from "/public/engine-cores/混响核心.png";
-import 熔炉核心Src from "/public/engine-cores/熔炉核心.png";
-import 负能核心Src from "/public/engine-cores/负能核心.png";
-import 超载核心Src from "/public/engine-cores/超载核心.png";
+import 콘덴싱_코어Src from "/public/engine-cores/콘덴싱 코어.png";
+import 잔향_코어Src from "/public/engine-cores/잔향 코어.png";
+import 용광로_코어Src from "/public/engine-cores/용광로 코어.png";
+import 음에너지_코어Src from "/public/engine-cores/음에너지 코어.png";
+import 과부하_코어Src from "/public/engine-cores/과부하 코어.png";
 
 export interface FormulaOfLevelHeadProps {
   formulaOfLevel: Formula;
@@ -17,13 +17,13 @@ export interface FormulaOfLevelHeadProps {
 
 export default function FormulaOfLevelHead(props: FormulaOfLevelHeadProps) {
   const { formulaOfLevel, formulaOfLevelIndex, produceName } = props;
-  const cores = ["超载核心", "熔炉核心", "冷凝核心", "负能核心", "混响核心"] as const;
+  const cores = ["과부하_코어", "용광로_코어", "콘덴싱_코어", "음에너지_코어", "잔향_코어"] as const;
   const coreSrcs = {
-    超载核心: 超载核心Src,
-    熔炉核心: 熔炉核心Src,
-    冷凝核心: 冷凝核心Src,
-    负能核心: 负能核心Src,
-    混响核心: 混响核心Src,
+    과부하_코어: 과부하_코어Src,
+    용광로_코어: 용광로_코어Src,
+    콘덴싱_코어: 콘덴싱_코어Src,
+    음에너지_코어: 음에너지_코어Src,
+    잔향_코어: 잔향_코어Src,
   };
 
   return (

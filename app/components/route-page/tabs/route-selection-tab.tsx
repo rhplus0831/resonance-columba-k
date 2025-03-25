@@ -49,10 +49,10 @@ export default function RouteSelectionTab(props: RouteSelectionTabProps) {
           </Typography>
         </div>
         <div className="flex flex-col">
-          <Typography className="py-1">需要填写个性化设置。</Typography>
-          <Typography className="py-1">选择购买的商品种类越多，所需进货书越少，但利润一般也越低。</Typography>
+          <Typography className="py-1">개인 설정을 입력해야 합니다.</Typography>
+          <Typography className="py-1">구매하는 상품 종류가 많을수록 필요한 보충서는 적어지지만, 일반적으로 이익도 낮아집니다.</Typography>
           <Typography className="py-1">
-            算法对进货书的使用方式与一图流不同，以不浪费为目的，即会确保能买完所有进货的商品才会使用进货书，最后再用下一利润顺位的商品来补满仓。
+            알고리즘은 그래프와는 다른 방식으로 보충서를 사용합니다. 낭비를 방지하기 위해 모든 보충 상품을 구매할 수 있음을 확인한 후에만 보충서를 사용하고, 마지막으로 다음 수익 순위의 상품으로 창고를 채웁니다.
           </Typography>
         </div>
       </div>
@@ -87,18 +87,18 @@ export default function RouteSelectionTab(props: RouteSelectionTabProps) {
           return (
             exchangesCombination.length > 0 && (
               <Box key={`recomendation-${index}`} className="m-4">
-                <Typography>购买{detailedRecommendations.length - index}种商品</Typography>
+                <Typography>구매 필요 물품 {detailedRecommendations.length - index}개</Typography>
                 <Box className="m-4 max-sm:mx-0">
                   <TableContainer component={Paper}>
                     <Table sx={{ minWidth: 650 }} aria-label="simple table">
                       <TableHead>
                         <TableRow>
                           <TableCell>시작 도시</TableCell>
-                          <TableCell>终点城市</TableCell>
-                          <TableCell>累计利润</TableCell>
-                          <TableCell>进货书需求</TableCell>
-                          <TableCell>购买的商品种类</TableCell>
-                          <TableCell>剩余空仓购买</TableCell>
+                          <TableCell>도착 도시</TableCell>
+                          <TableCell>누적 이익</TableCell>
+                          <TableCell>보충 횟수</TableCell>
+                          <TableCell>구매한 상품</TableCell>
+                          <TableCell>구매 가능한 상품</TableCell>
                         </TableRow>
                       </TableHead>
                       <TableBody>

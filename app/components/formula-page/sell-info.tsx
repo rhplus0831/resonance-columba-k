@@ -50,7 +50,7 @@ export default function SellInfo(props: SellInfoProps) {
     <Box>
       <Box>
         <Typography component="span" className="align-middle">
-          卖出价格：
+          판매 가격:
         </Typography>
         <Typography component="span" className="mx-1 align-middle">
           {sell.city}
@@ -61,14 +61,14 @@ export default function SellInfo(props: SellInfoProps) {
         <Chip label={`${sell.variation}%`} size="small" color={getVariationColor(sell.variation)} className="mx-1" />
       </Box>
       <Box>
-        <Typography component="span">理论最高价格：</Typography>
+        <Typography component="span">이론상 최고 가격:</Typography>
         <Typography component="span" className="mx-1">
           {highestBasePriceCity}
         </Typography>
         <Typography component="span" className="mx-1">
           {theoryHighestPrice}
         </Typography>
-        <Typography>当前价格占比：{currentPricePercentage}%</Typography>
+        <Typography>현재 가격 비율: {currentPricePercentage}%</Typography>
       </Box>
     </Box>
   );

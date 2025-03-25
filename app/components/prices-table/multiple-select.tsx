@@ -57,10 +57,10 @@ export default function MultipleSelect(props: any) {
           </MenuItem>
         ))}
         <MenuItem key="noneBtn" value="noneBtn" disabled={!selectedOptions.length}>
-          全取消
+          전체 취소
         </MenuItem>
         <MenuItem key="allBtn" value="allBtn" disabled={allOptions.length === selectedOptions.length}>
-          全选
+          전체 선택
         </MenuItem>
       </Select>
     </FormControl>
