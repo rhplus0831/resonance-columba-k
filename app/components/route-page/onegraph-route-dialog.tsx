@@ -137,40 +137,39 @@ export default function OneGraphRouteDialog(props: OneGraphRouteDialogProps) {
           {goAndReturn && returnDisplayData && (
             <>
               <Box className="m-8">
-                <DialogContentText>回程利润：{returnDisplayData.profit}</DialogContentText>
-                <DialogContentText>回程进货书需求：{returnDisplayData.restockCount}</DialogContentText>
+                <DialogContentText>귀환 이익: {returnDisplayData.profit}</DialogContentText>
+                <DialogContentText>귀환 주문서 소모: {returnDisplayData.restockCount}</DialogContentText>
                 {returnDisplayData.isWastingRestock && (
                   <DialogContentText className="text-red-500">
-                    进货过多！会浪费进货书。最多使用超过{returnDisplayData.lastNotWastingRestock}
-                    本进货书后不会再产生收益。
+                    주문서 과잉! 재고가 낭비됩니다. {returnDisplayData.lastNotWastingRestock}개 이상 사용 후 더 이상 수익이 발생하지 않습니다.
                   </DialogContentText>
                 )}
-                <DialogContentText component="div">需要购买的产品：{returnDisplayData.buyProducts}</DialogContentText>
-                <DialogContentText>产品利润顺位：{returnDisplayData.profitOrder}</DialogContentText>
-                <DialogContentText>所需舱位：{returnDisplayData.usedLot}</DialogContentText>
+                <DialogContentText component="div">구매 상품: {returnDisplayData.buyProducts}</DialogContentText>
+                <DialogContentText>고이익 상품: {returnDisplayData.profitOrder}</DialogContentText>
+                <DialogContentText>필요 화물칸: {returnDisplayData.usedLot}</DialogContentText>
                 <DialogContentText>
-                  回程疲劳：{returnDisplayData.fatigue}
-                  {bargainFatigueTotalRt > 0 ? ` (议价占${bargainFatigueTotalRt})` : ""}
+                  귀환 피로도: {returnDisplayData.fatigue}
+                  {bargainFatigueTotalRt > 0 ? ` (흥정 ${bargainFatigueTotalRt})` : ""}
                 </DialogContentText>
-                <DialogContentText>回程利润/疲劳：{returnDisplayData.profitPerFatigue}</DialogContentText>
+                <DialogContentText>귀환 이익/피로도 비율: {returnDisplayData.profitPerFatigue}</DialogContentText>
                 {returnDisplayData.restockCount > 0 && (
-                  <DialogContentText>回程综合参考利润：{returnDisplayData.generalProfitIndex}</DialogContentText>
+                  <DialogContentText>귀환 종합 참고 이익: {returnDisplayData.generalProfitIndex}</DialogContentText>
                 )}
               </Box>
               <Box className="m-8">
-                <DialogContentText>总利润：{totalDisplayData!.profit}</DialogContentText>
-                <DialogContentText>总进货书需求：{totalDisplayData!.restockCount}</DialogContentText>
+                <DialogContentText>총 이익: {totalDisplayData!.profit}</DialogContentText>
+                <DialogContentText>총 주문서 소모: {totalDisplayData!.restockCount}</DialogContentText>
                 <DialogContentText>
-                  总疲劳：{totalDisplayData!.fatigue}
-                  {bargainFatigueTotal > 0 ? ` (议价占${bargainFatigueTotal})` : ""}
+                  총 피로도: {totalDisplayData!.fatigue}
+                  {bargainFatigueTotal > 0 ? ` (흥정 ${bargainFatigueTotal})` : ""}
                 </DialogContentText>
                 <DialogContentText>
-                  总利润/总疲劳：
+                  총 이익/피로도 비율: 
                   {totalDisplayData!.profitPerFatigue}
                 </DialogContentText>
                 {totalDisplayData!.generalProfitIndex > 0 && (
                   <DialogContentText>
-                    总综合参考利润：
+                    총 종합 참고 이익: 
                     {totalDisplayData!.generalProfitIndex}
                   </DialogContentText>
                 )}
@@ -179,7 +178,7 @@ export default function OneGraphRouteDialog(props: OneGraphRouteDialogProps) {
           )}
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleClose}>关闭</Button>
+          <Button onClick={handleClose}>닫기</Button>
         </DialogActions>
       </Dialog>
     </React.Fragment>

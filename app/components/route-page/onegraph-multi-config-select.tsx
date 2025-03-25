@@ -129,16 +129,16 @@ export default function OnegraphMultiConfigSelect({
       </ButtonGroup>
       <div className="flex justify-center flex-nowrap -order-1 sm:-order-none">
         <Button className="ml-4 whitespace-nowrap" variant="text" onClick={addMultiConfig}>
-          添加配置
+          설정 추가
         </Button>
         <IconButton className="mx-4" size="small" onClick={handleOpenHelp}>
           <HelpOutlineIcon />
         </IconButton>
       </div>
       <ContextMenu ref={menuRef} transformOrigin={isTouch ? { vertical: "top", horizontal: "right" } : undefined}>
-        <MenuItem onClick={handleUpdateConfig}>更新</MenuItem>
-        <MenuItem onClick={handleOpenRenameDialog}>重命名</MenuItem>
-        <MenuItem onClick={handleRemoveConfig}>删除</MenuItem>
+        <MenuItem onClick={handleUpdateConfig}>업데이트</MenuItem>
+        <MenuItem onClick={handleOpenRenameDialog}>이름 변경</MenuItem>
+        <MenuItem onClick={handleRemoveConfig}>제거</MenuItem>
       </ContextMenu>
       <ConfigRenameDialog
         oldName={renameOldName}
@@ -159,10 +159,10 @@ export default function OnegraphMultiConfigSelect({
         }}
       >
         <Typography className="m-4">
-          点击“添加配置”后，当前一图流的配置会被保存到一个新配置中，点击某个配置可以重新应用该配置。
+          "설정 추가"를 클릭하면 현재 원그래프 설정이 새로운 설정으로 저장되며, 설정을 클릭하면 해당 설정을 다시 적용할 수 있습니다.
         </Typography>
         <Typography className="m-4">
-          右击（移动端长按）某个配置可弹出操作菜单进行“重命名”、“删除”等操作，“更新”指的是将当前一图流配置更新到该配置。
+          설정을 우클릭(모바일에서는 길게 누르기)하면 "이름 변경", "제거" 등의 작업 메뉴가 표시됩니다. "업데이트"는 현재 원그래프 설정을 해당 설정으로 업데이트하는 것을 의미합니다.
         </Typography>
       </Popover>
     </>
@@ -216,7 +216,7 @@ function ConfigRenameDialog({
 
   return (
     <Dialog open={open} onClose={handleDialogClose}>
-      <DialogTitle>配置重命名</DialogTitle>
+      <DialogTitle>설정 이름 변경</DialogTitle>
       <DialogContent>
         <TextField
           inputRef={inputRef}
@@ -229,9 +229,9 @@ function ConfigRenameDialog({
         />
       </DialogContent>
       <DialogActions>
-        <Button onClick={handleDialogClose}>取消</Button>
+        <Button onClick={handleDialogClose}>취소</Button>
         <Button disabled={!newName || newName === oldName} onClick={handleConfirmRename}>
-          确定
+          확인
         </Button>
       </DialogActions>
     </Dialog>

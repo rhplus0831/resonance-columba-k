@@ -729,7 +729,7 @@ export default function OnegraphTab(props: OnegraphTabProps) {
               <Box className="sm:px-8 sm:py-1"></Box>
               {/* mobile sort buttons */}
               <Box className="sm:hidden">
-                <Typography className="inline-block">排序：</Typography>
+                <Typography className="inline-block">정렬:</Typography>
                 <ToggleButtonGroup
                   value={onegraphListModeSortedBy}
                   exclusive
@@ -740,9 +740,9 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                   }}
                   aria-label="onegraph display mode"
                 >
-                  <ToggleButton value="byProfit">利润</ToggleButton>
-                  <ToggleButton value="byProfitPerFatigue">单位疲劳利润</ToggleButton>
-                  <ToggleButton value="byGeneralProfitIndex">综合参考利润</ToggleButton>
+                  <ToggleButton value="byProfit">이익</ToggleButton>
+                  <ToggleButton value="byProfitPerFatigue">피로도 당 이익</ToggleButton>
+                  <ToggleButton value="byGeneralProfitIndex">종합 참고 이익</ToggleButton>
                 </ToggleButtonGroup>
               </Box>
             </ListItem>
@@ -774,19 +774,19 @@ export default function OnegraphTab(props: OnegraphTabProps) {
                     <ListItemText
                       className="sm:basis-1/5 sm:grow basis-1/4 grow-0"
                       primary={displayProfit}
-                      secondary="总利润"
+                      secondary="총 이익"
                     />
                     <ListItemText
                       className="sm:basis-1/5 sm:grow basis-1/4 grow-0"
                       primary={profitPerFatigue}
-                      secondary="利润 / 疲劳"
+                      secondary="이익 / 피로도"
                     />
                     <ListItemText
                       className="sm:basis-1/5 sm:grow basis-1/4 grow-0"
                       primary={generalProfitIndex}
-                      secondary="综合参考利润"
+                      secondary="종합 참고 이익"
                     />
-                    <Button onClick={() => showOneGraphRouteDialog(fromCity, toCity)}>详情</Button>
+                    <Button onClick={() => showOneGraphRouteDialog(fromCity, toCity)}>상세</Button>
                   </ListItem>
                 );
               })}

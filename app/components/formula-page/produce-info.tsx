@@ -14,12 +14,12 @@ export default function ProduceInfo(props: ProduceInfoProps) {
 
   return (
     <Box className="my-2">
-      <Typography>产出：</Typography>
+      <Typography>생산:</Typography>
       <Typography component="span" className="align-middle">
         {formulaOfLevel.produce.product}
       </Typography>
       <Chip label={formulaOfLevel.produce.num} size="small" className="mx-1" />
-      <Typography>额外概率产出：</Typography>
+      <Typography>추가 생산 확률:</Typography>
       <Typography component="span" className="align-middle">
         {formulaOfLevel.extraProduces.product}
       </Typography>

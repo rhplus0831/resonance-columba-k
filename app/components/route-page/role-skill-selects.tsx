@@ -40,13 +40,13 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
     const citySkill = roleSkill?.buyMore?.city;
     if (citySkill) {
       Object.entries(citySkill).map(([city, percent]) => {
-        texts.push(block(`roleskilltext-city-${city}`, `${city}特产+${percent}%`));
+        texts.push(block(`roleskilltext-city-${city}`, `${city} 특산품 +${percent}%`));
       });
     }
 
     const allSkill = roleSkill?.buyMore?.all;
     if (allSkill) {
-      texts.push(block("roleskilltext-all", `所有交易品+${allSkill}%`));
+      texts.push(block("roleskilltext-all", `모든 거래품 +${allSkill}%`));
     }
 
     const bargainSkills = roleSkill?.bargain;
@@ -64,39 +64,39 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
       } = bargainSkills;
 
       if (firstTrySuccessRate) {
-        texts.push(block("roleskilltext-firstTrySuccessRate", `首次议价成功率+${firstTrySuccessRate}%`));
+        texts.push(block("roleskilltext-firstTrySuccessRate", `첫 흥정 성공률 +${firstTrySuccessRate}%`));
       }
 
       if (afterFailedSuccessRate) {
-        texts.push(block("roleskilltext-afterFailedSuccessRate", `议价失败后下次成功率+${afterFailedSuccessRate}%`));
+        texts.push(block("roleskilltext-afterFailedSuccessRate", `흥정 실패 후 다음 성공률 +${afterFailedSuccessRate}%`));
       }
 
       if (bargainCount) {
-        texts.push(block("roleskilltext-bargainCount", `砍价次数+${bargainCount}`));
+        texts.push(block("roleskilltext-bargainCount", `가격 인하 횟수 +${bargainCount}`));
       }
 
       if (bargainSuccessRate) {
-        texts.push(block("roleskilltext-bargainSuccessRate", `砍价成功率+${bargainSuccessRate}%`));
+        texts.push(block("roleskilltext-bargainSuccessRate", `가격 인하 성공률 +${bargainSuccessRate}%`));
       }
 
       if (bargainRate) {
-        texts.push(block("roleskilltext-bargainRate", `砍价幅度+${bargainRate}%`));
+        texts.push(block("roleskilltext-bargainRate", `가격 인하 폭 +${bargainRate}%`));
       }
 
       if (raiseCount) {
-        texts.push(block("roleskilltext-raiseCount", `抬价次数+${raiseCount}`));
+        texts.push(block("roleskilltext-raiseCount", `가격 인상 횟수 +${raiseCount}`));
       }
 
       if (raiseSuccessRate) {
-        texts.push(block("roleskilltext-raiseSuccessRate", `抬价成功率+${raiseSuccessRate}%`));
+        texts.push(block("roleskilltext-raiseSuccessRate", `가격 인상 성공률 +${raiseSuccessRate}%`));
       }
 
       if (raiseRate) {
-        texts.push(block("roleskilltext-raiseRate", `抬价幅度+${raiseRate}%`));
+        texts.push(block("roleskilltext-raiseRate", `가격 인상 폭 +${raiseRate}%`));
       }
 
       if (afterFailedLessFatigue) {
-        texts.push(block("roleskilltext-afterFailedLessFatigue", `价失败时增加的疲劳值-${afterFailedLessFatigue}`));
+        texts.push(block("roleskilltext-afterFailedLessFatigue", `흥정 실패 시 피로도 증가 -${afterFailedLessFatigue}`));
       }
     }
 
@@ -106,7 +106,7 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
       if (cityTaxCut) {
         Object.entries(cityTaxCut).map(([city, percentValue]) => {
           const percent = percentValue * 100;
-          texts.push(block(`roleskilltext-taxCut-${city}`, `${city}税率${percent}%`));
+          texts.push(block(`roleskilltext-taxCut-${city}`, `${city} 세율${percent}%`));
         });
       }
     }
@@ -115,7 +115,7 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
     if (otherSkills) {
       const { driveLessFatigue } = otherSkills;
       if (driveLessFatigue) {
-        texts.push(block("roleskilltext-driveLessFatigue", `驾驶疲劳值-${driveLessFatigue}`));
+        texts.push(block("roleskilltext-driveLessFatigue", `운행 피로도-${driveLessFatigue}`));
       }
     }
 

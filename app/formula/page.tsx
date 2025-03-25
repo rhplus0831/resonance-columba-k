@@ -124,10 +124,10 @@ export default function FormulaPage() {
     <>
       <div className="bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-2xl mx-auto my-4 w-full box-border">
         <div className="flex flex-col">
-          <Typography className="py-1">开发中。欢迎建议与纠错。</Typography>
-          <Typography className="py-1">仅包含所有初级原材料都可购买的制造品。</Typography>
-          <Typography className="py-1">原料买入价格与产品卖出价格均为当前时间点的价格。</Typography>
-          <Typography className="py-1">利润为买入卖出价的简单减法，不含议价与税收。</Typography>
+          <Typography className="py-1">개발 중입니다. 제안과 오류 수정을 환영합니다.(원작자에게 제안해주세요)</Typography>
+          <Typography className="py-1">모든 기초 원자재를 구매할 수 있는 제조품만 포함됩니다.</Typography>
+          <Typography className="py-1">원자재 구매 가격과 제품 판매 가격은 현재 시점의 가격입니다.</Typography>
+          <Typography className="py-1">이익은 구매가와 판매가의 단순 차이이며, 협상과 세금은 포함되지 않습니다.</Typography>
         </div>
       </div>
       <Box className="m-0 md:m-8 xl:m-16">

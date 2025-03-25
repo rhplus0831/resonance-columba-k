@@ -129,16 +129,16 @@ export default function RoutePage() {
       <div role="tabpanel" hidden={tabIndex !== 5}>
         <div className="bg-white dark:bg-gray-800 p-6 shadow-xl ring-1 ring-gray-900/5 rounded-lg backdrop-blur-lg max-w-2xl mx-auto my-4 w-full box-border">
           <div className="flex flex-col">
-            <Typography className="py-1">买价为砍价后税前价格。</Typography>
-            <Typography className="py-1">卖价为抬价后税前价格。</Typography>
-            <Typography className="py-1">利润为税后利润。</Typography>
+            <Typography className="py-1">구매가는 협상 후 세전 가격입니다.</Typography>
+            <Typography className="py-1">판매가는 인상 후 세전 가격입니다.</Typography>
+            <Typography className="py-1">이익은 세후 이익입니다.</Typography>
             <Typography className="py-1">
-              利润排序使用的是单位舱位利润，暂不支持单位疲劳利润或单位进货卡利润。
+              이익 정렬은 단위 적재량 이익을 사용하며, 현재 단위 피로도 이익이나 단위 보충서 이익은 지원하지 않습니다.
             </Typography>
             <Typography className="py-1">
-              交易所结算页面所展示的利润是不含买入税与卖出时的利润税的，而算法计算的利润是税后的，所以模拟的利润会稍低于交易所显示的利润。
+              거래소 정산 페이지에 표시되는 이익은 구매세와 판매 시 이익세를 포함하지 않지만, 알고리즘이 계산하는 이익은 세후이므로 시뮬레이션된 이익이 거래소에 표시된 이익보다 약간 낮습니다.
             </Typography>
-            <Typography className="py-1">综合参考利润算法为：总利润 / (总疲劳消耗 + 总票数 * 33)</Typography>
+            <Typography className="py-1">종합 참고 이익 알고리즘: 총 이익 / (총 피로도 소모 + 총 보충서 수 * 33)</Typography>
           </div>
         </div>
       </div>

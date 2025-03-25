@@ -18,7 +18,7 @@ export default function ConsumesInfo(props: ConsumesInfoProps) {
   return (
     <>
       <Box className="my-2">
-        <Typography>原料：</Typography>
+        <Typography>재료:</Typography>
         {consumes.map((item) => {
           return (
             <MaterialBlock
@@ -32,7 +32,7 @@ export default function ConsumesInfo(props: ConsumesInfoProps) {
         })}
       </Box>
       <Box className="my-2">
-        <Typography>初级原料：</Typography>
+        <Typography>기초 재료:</Typography>
         {consumesPrimary.map((item) => {
           return (
             <MaterialBlock
