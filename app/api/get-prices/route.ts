@@ -84,7 +84,7 @@ function processGoodsData(processed: FirestoreProducts, goodsInfo: GoodsInfo, st
 
           processed[productName].buy[cityId] = {
               trend: item.trend > 0 ? "up" : "down",
-              variation: item.quota || 0,
+              variation: item.quota*100 || 100,
               time: {
                   _seconds: seconds,
                   _nanoseconds: nanoseconds
@@ -111,7 +111,7 @@ function processGoodsData(processed: FirestoreProducts, goodsInfo: GoodsInfo, st
 
       processed[productName].sell[cityId] = {
           trend: item.trend > 0 ? "up" : "down",
-          variation: item.quota || 0,
+          variation: item.quota*100 || 100,
           time: {
               _seconds: seconds,
               _nanoseconds: nanoseconds
@@ -127,14 +127,6 @@ function processGoodsData(processed: FirestoreProducts, goodsInfo: GoodsInfo, st
             sell: {},
             buy: {}
         };
-    }
-    
-    // variation에 100을 곱하는 로직 추가
-    for (const cityId in product.sell) {
-        product.sell[cityId].variation *= 100;
-    }
-    for (const cityId in product.buy) {
-        product.buy[cityId].variation *= 100;
     }
     
     Object.assign(processed[productName].sell, product.sell);
