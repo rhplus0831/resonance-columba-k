@@ -143,7 +143,7 @@ export default function RoleSkillSelects(props: RoleSkillSelectsProps) {
               <TableRow key={`role-${role}`}>
                 <TableCell scope="row" className="max-sm:p-1">
                   <Avatar className="mx-auto">
-                    <Image src={roleImages[role]} alt={role} width={40} height={40} />
+                    <Image src={roleImages[role.replace(" ", "_").replace("-", "_")]} alt={role.replace(" ", "_").replace("-", "_")} width={40} height={40} />
                   </Avatar>
                   <span className="mx-auto block text-center pt-2">{role}</span>
                 </TableCell>
