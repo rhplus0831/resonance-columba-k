@@ -84,7 +84,7 @@ function processGoodsData(processed: FirestoreProducts, goodsInfo: GoodsInfo, st
 
           processed[productName].buy[cityId] = {
               trend: item.trend > 0 ? "up" : "down",
-              variation: item.quota*100 || 100,
+              variation: Math.round(item.quota*100) || 100,
               time: {
                   _seconds: seconds,
                   _nanoseconds: nanoseconds
