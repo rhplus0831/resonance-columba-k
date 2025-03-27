@@ -269,6 +269,7 @@ export const INITIAL_PLAYER_CONFIG: PlayerConfig = {
     "케이프시": 1,
     "스톰아이시": 1,
     "아니타 발사 센터": 1,
+    "운수교 기지": 1,
   },
   roles: {},
   onegraph: {
