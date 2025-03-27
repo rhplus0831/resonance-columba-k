@@ -58,6 +58,7 @@ import 라지엘·회상 from "/public/roles/head/라지엘·회상.png";
 import 우샤나 from "/public/roles/head/우샤나.png";
 import 라지엘 from "/public/roles/head/라지엘.png";
 import 레카지아 from "/public/roles/head/레카지아.png";
+import 파라디 from "/public/roles/head/파라디.png";
 // import end
 
 export const roleImages: { [roleName: string]: StaticImageData } = {
@@ -116,5 +117,6 @@ export const roleImages: { [roleName: string]: StaticImageData } = {
   우샤나,
   라지엘,
   레카지아,
+  파라디,
   // export role images end
 };
