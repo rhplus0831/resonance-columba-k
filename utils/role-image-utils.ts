@@ -60,6 +60,7 @@ import 라지엘 from "/public/roles/head/라지엘.png";
 import 레카지아 from "/public/roles/head/레카지아.png";
 import 파라디 from "/public/roles/head/파라디.png";
 import 메이 from "/public/roles/head/메이.png";
+import 시즈루 from "/public/roles/head/시즈루.png";
 // import end
 
 export const roleImages: { [roleName: string]: StaticImageData } = {
@@ -120,5 +121,6 @@ export const roleImages: { [roleName: string]: StaticImageData } = {
   레카지아,
   파라디,
   메이,
+  시즈루,
   // export role images end
 };
