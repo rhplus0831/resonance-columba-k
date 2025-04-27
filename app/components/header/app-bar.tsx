@@ -73,11 +73,6 @@ export default function HeaderAppBar() {
                   제조
                 </Button>
               </Link>
-              <Link href="/discussion" className="ml-2">
-                <Button variant="text" className=" px-0" startIcon={<ChatBubbleOutlineRoundedIcon />}>
-                  토론
-                </Button>
-              </Link>
               <Link href="/about" className="ml-2">
                 <Button variant="text" className=" px-0" startIcon={<InfoOutlinedIcon />}>
                   정보
